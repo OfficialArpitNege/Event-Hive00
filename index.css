@@ -1,0 +1,153 @@
+/* Gradients & backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #1f1c2c 0%, #928DAB 100%);
+}
+
+body {
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+}
+
+/* Cards */
+.card-hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1e1e2f, #2c2c44);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+}
+.card-hover:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 15px rgba(120, 80, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+#connectWallet {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+}
+#connectWallet:hover {
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+}
+#logoutBtn {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+/* Inputs */
+input, textarea {
+  background: rgba(30, 30, 45, 0.85);
+  color: #f8f8f8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+input:focus, textarea:focus {
+  border-color: #7b5cff;
+  box-shadow: 0 0 10px rgba(123, 92, 255, 0.5);
+  outline: none;
+}
+
+/* Tables */
+table {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+th {
+  background: rgba(255, 255, 255, 0.05);
+  color: #aaa;
+}
+td {
+  color: #f0f0f0;
+}
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Leaderboard highlight */
+#leaderboard div {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease;
+}
+#leaderboard div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(72, 187, 255, 0.5);
+}
+
+/* Message container (toasts) */
+#messageContainer div {
+  background: linear-gradient(135deg, #1e1e2f, #282846);
+  color: #fff;
+  border-left: 4px solid #7b5cff;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.auth-card {
+  background: rgba(30, 30, 45, 0.85); /* translucent dark */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6),
+              0 0 20px rgba(120, 80, 255, 0.25);
+  backdrop-filter: blur(12px);
+  color: #f8f8f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7),
+              0 0 25px rgba(123, 92, 255, 0.4);
+}
+/* Auth headings */
+.auth-card h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-card h3 {
+  color: #9fa8ff; /* soft neon purple-blue */
+  font-weight: 600;
+}
+/* Force text inside metamask modal to be visible */
+.metamask-modal, 
+.metamask-modal * {
+  color: #fff !important;
+  background: #1e1e2d !important;
+}
+/* Override the injected modal */
+.bg-white.rounded-lg.p-6.max-w-md {
+  background: rgba(30, 30, 45, 0.95) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.bg-white.rounded-lg.p-6.max-w-md h3,
+.bg-white.rounded-lg.p-6.max-w-md p,
+.bg-white.rounded-lg.p-6.max-w-md div {
+  color: #fff !important;
+}
+
+.bg-white.rounded-lg.p-6.max-w-md button {
+  background: rgba(50,50,70,0.6);
+  color: #f8f8f8;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.bg-white.rounded-lg.p-6.max-w-md button:hover {
+  background: rgba(100,100,150,0.8);
+}
